@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+}
+a {
+    color: #4CAF50;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul p {
+    padding: 3px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul p label {
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top {
+    width: 100%;
+}
+
+#top-left {
+    position: relative;
+    float: left;
+}
+
+#top-right {
+    position: relative;
+    width: 43%;
+    float: right;
+    background: #111;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 15px;
+}
+#top-right::before {
+    content: "About me & projects";
+    border: 1px solid #666;
+    padding: 3px 10px;
+    position: absolute;
+    top: -15px;
+    background: #111;
+    margin-left: 10px;
+
+}
+#top-right #avatar, #top-right #bio {
+    display: inline-block;
+    width: 45%;
+}
+
+#top-right #projects {
+    display: block;
+}
+
+#top-right a,
+#top-right a:focus,
+#top-right a:visited,
+#top-right a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+#avatar {
+    text-align: center;
+    padding-right: 10px;
+}
+#avatar img {
+    width: 100%;
+}
+#bio table {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.7em;
+}
+#content {
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 43em) {
+    #top-right, #top-left {
+      float: none;
+    }
+    #top-right {
+        width: 100%;
+        padding: 16px 1px;
+        margin-top: 25px;
+    }
+    #avatar {
+        padding: 10px;
+    }
+    #avatar img {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  span.emoji {
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.5em;
+  }
